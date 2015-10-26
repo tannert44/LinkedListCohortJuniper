@@ -37,6 +37,11 @@ namespace SinglyLinkedLists
 
         public void AddLast(string value)
         {
+            AddLast(value);
+        }
+
+        private void AddLast()
+        {
             throw new NotImplementedException();
         }
 
