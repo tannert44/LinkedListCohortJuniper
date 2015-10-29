@@ -14,15 +14,18 @@ namespace SinglyLinkedLists
         // READ: http://msdn.microsoft.com/en-us/library/aa287786(v=vs.71).aspx
         private SinglyLinkedListNode next;
         public SinglyLinkedListNode Next
-        {
+        { 
             get { return next; }
+
             set
             {
                 if (this == value)
                 {
                     throw new ArgumentException();
                 }
+
                 this.next = value;
+
             }
         }
         //Gets the value on node in SLL
@@ -48,6 +51,8 @@ namespace SinglyLinkedLists
         {
             this.value = value;
 
+
+            this.value = value;
             // Used by the visualizer:
             allNodes.Add(this);
         }

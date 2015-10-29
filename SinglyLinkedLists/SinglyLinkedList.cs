@@ -45,6 +45,7 @@ namespace SinglyLinkedLists
         //Adds a Node Value to the end of the SLL
         public void AddLast(string value)
         {
+<<<<<<< HEAD
             SinglyLinkedListNode node = first;
             if (first.Value == null)
             {
@@ -55,6 +56,14 @@ namespace SinglyLinkedLists
                 node = node.Next;
             }
             node.Next = new SinglyLinkedListNode(value);
+=======
+            AddLast(value);
+        }
+
+        private void AddLast()
+        {
+            throw new NotImplementedException();
+>>>>>>> 2994c5435035d238cc6125fcdb8df6b25242d95e
         }
 
         // NOTE: There is more than one way to accomplish this.  One is O(n).  The other is O(1). Counts the Node Values in SLL
